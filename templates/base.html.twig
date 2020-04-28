@@ -16,14 +16,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Sortir{% endblock %}</title>
     <link  rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="icon" href="{{ asset('img/.') }}">
+    <link rel="icon" href="{{ asset('img/logo.png') }}">
     <script>
         function darken() {
             var element = document.body;
@@ -47,8 +46,8 @@
                 </a>
 
                 <div class="topnav">
-                        <a href="{{ path("admin_lieu") }}" title="lieux">Lieux</a>
-                        <a href="{{ path("admin_site") }}" title="sites">Sites</a>
+                        <a href="{{ path("admin_salon") }}" title="salons">Lieux</a>
+                        <a href="{{ path("admin_event") }}" title="evenements">Sites</a>
                         <a href="{{ path("accueil") }}" title="accueil">Accueil</a>
                         <a href="{{ path("mon_profil") }}" title="profil">Mon profil</a>
                         <a href="{{ path("app_logout") }}" title="deconnexion">Se déconnecter</a>
@@ -63,7 +62,7 @@
 
             <header >
                 <a class="site-title" href="{{ path("accueil") }}" title="Watch | Home">
-                    <img  src="{{ asset('img/') }}" alt="Watch.com">
+                    <img  src="{{ asset('img/logo.png') }}" alt="Watch.com">
                 </a>
                         <div class="topnav">
                             <a href="#" title="accueil">Accueil</a>
@@ -73,6 +72,19 @@
                 </div>
             </header>
         {% endif %}
+        <header >
+            <div classe="brc">
+            <a class="site-title" href="{{ path("accueil") }}" title="Watch | Home">
+                <img  src="{{ asset('img/logo.png') }}" alt="Watch.com">
+            </a>
+            <div class="topnav">
+                <a href="#" title="accueil">Accueil</a>
+                <a href="#" title="profil">Mon profil</a>
+                <a href="#" title="deconnexion">Se déconnecter</a>
+
+            </div>
+</div>
+        </header>
     {% endblock %}
 
 

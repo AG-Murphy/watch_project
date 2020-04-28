@@ -11,7 +11,7 @@
         <div class="col-sm-4">
 
             <div class="card" >
-                <img class="card-img-top" src="img/docs.png" >
+                <img class="card-img-top" src='{{ ("img/docs.png") }}' >
                 <div class="card-body">
                     <h4 class="card-title">Documentation</h4>
                     <a href="#" class="btn btn-primary stretched-link"></a>
@@ -23,7 +23,7 @@
         <div class="col-sm-4">
 
             <div class="card" >
-                <img class="card-img-top" src="img/meetup.jpg">
+                <img class="card-img-top" src='{{ ("img/meetup.jpg") }}'>
                 <div class="card-body">
                     <h4 class="card-title">Meetups</h4>
                     <a href="#" class="btn btn-primary stretched-link"></a>
@@ -38,7 +38,7 @@
         <div class="col-sm-4">
 
             <div class="card" >
-                <img class="card-img-top" src="img/event.png">
+                <img class="card-img-top" src='{{ ("img/event.png") }}'>
                 <div class="card-body">
                     <h4 class="card-title">Evenements</h4>
                     <a href="#" class="btn btn-primary stretched-link"></a>
@@ -50,7 +50,7 @@
         <div class="col-sm-4">
 
             <div class="card" >
-                <img class="card-img-top" src="img/salon.jpg">
+                <img class="card-img-top" src="{{ asset('img/salon.jpg') }}">
                 <div class="card-body">
                     <h4 class="card-title">Salons</h4>
                     <a href="#" class="btn btn-primary stretched-link"></a>
@@ -63,7 +63,7 @@
         <div class="col-sm-1"></div>
         <div class="col-sm-4">
             <div class="card" >
-                <img class="card-img-top" src="img/blog.png" >
+                <img class="card-img-top" src='{{ asset("img/blog.png") }}' >
                 <div class="card-body">
                     <h4 class="card-title">Blog</h4>
                     <a href="#" class="btn btn-primary stretched-link"></a>
@@ -75,6 +75,7 @@
         <div class="col-sm-1"></div>
     </div>
 
+</div>
 
     {#DEBUT  AFFICHAGE MESSAGES FLASH#}
     {% for label, messages in app.flashes(['danger', 'success']) %}

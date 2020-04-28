@@ -8,12 +8,6 @@ body {
     color: black;
 }
 
-.container {
-    min-width: 360px;
-    max-width: 1000px;
-    margin: auto;
-    padding: 10px 20px;
-}
 
 a {
     text-decoration: none;
@@ -43,12 +37,16 @@ header
     display: block;
     margin-right: 5px;
 }
-
+.brc{
+    background-color: #0f4d80;
+    width: 100%;
+}
 
 /* css navbar */
 .topnav {
     background-color: #0f4d80;
-    overflow: hidden;
+    ;
+    width: 100%;
 }
 .topnav a {
 
@@ -68,6 +66,7 @@ header
 .topnav-right {
     float: right;
 }
+
 /**
 main
  */
@@ -169,8 +168,7 @@ caption {
 
 
 .footer {
-    position: absolute;
-    bottom: 0;
+
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 300px;
@@ -190,7 +188,7 @@ caption {
 -------------------------------------------------- */
 footer {
     padding-top: 30px;
-    background-color: #292c2f;
+    background-color: #0f4d80;
     color: #bbb;
 }
 
