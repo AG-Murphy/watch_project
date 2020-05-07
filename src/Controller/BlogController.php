@@ -15,5 +15,6 @@ class BlogController extends AbstractController
         return $this->render('blog/index.html.twig', [
             'controller_name' => 'BlogController',
         ]);
+
     }
 }
